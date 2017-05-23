@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/spacing_medium"
+    android:paddingRight="@dimen/spacing_medium"
+    android:paddingTop="@dimen/spacing_xlarge">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/background_parts" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/spacing_little"
+            android:src="@drawable/one_step" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/v_relation"
+            style="@style/pill_profile_completeness"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_tiny"
+            android:background="@drawable/pill_profile_completeness_background" />
+
+        <View
+            android:id="@+id/v_ethnicity"
+            style="@style/pill_profile_completeness"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_tiny"
+            android:background="@color/decent_grey" />
+
+        <View
+            android:id="@+id/v_religion"
+            style="@style/pill_profile_completeness"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_tiny"
+            android:background="@color/decent_grey" />
+
+        <View
+            android:id="@+id/v_height"
+            style="@style/pill_profile_completeness"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_tiny"
+            android:background="@color/decent_grey" />
+
+        <View
+            android:id="@+id/v_body_type"
+            style="@style/pill_profile_completeness"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_tiny"
+            android:background="@color/decent_grey" />
+
+        <View
+            android:id="@+id/v_smoking"
+            style="@style/pill_profile_completeness"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_tiny"
+            android:background="@color/decent_grey" />
+
+        <View
+            android:id="@+id/v_drinking"
+            style="@style/pill_profile_completeness"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_tiny"
+            android:background="@color/decent_grey" />
+        >
+    </LinearLayout>
+
+    <com.skeleton.util.customview.MaterialEditText
+        android:id="@+id/et_relation"
+        style="@style/et_profile_completeness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:hint="@string/text_tv_history" />
+
+    <com.skeleton.util.customview.MaterialEditText
+        android:id="@+id/et_ethnicity"
+        style="@style/et_profile_completeness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/text_tv_ethnicity" />
+
+    <com.skeleton.util.customview.MaterialEditText
+        android:id="@+id/et_religion"
+        style="@style/et_profile_completeness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/text_tv_religion" />
+
+    <com.skeleton.util.customview.MaterialEditText
+        android:id="@+id/et_height"
+        style="@style/et_profile_completeness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/text_tv_height" />
+
+    <com.skeleton.util.customview.MaterialEditText
+        android:id="@+id/et_body_type"
+        style="@style/et_profile_completeness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/text_tv_body" />
+
+    <com.skeleton.util.customview.MaterialEditText
+        android:id="@+id/et_smoking"
+        style="@style/et_profile_completeness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/text_tv_smoking" />
+
+    <com.skeleton.util.customview.MaterialEditText
+        android:id="@+id/et_drinking"
+        style="@style/et_profile_completeness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/text_tv_drink" />
+
+    <Button
+        android:id="@+id/bt_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pill_background_sign_in"
+        android:text="@string/bt_text_next"
+        style="@style/pill_profile"
+  />
+</LinearLayout>

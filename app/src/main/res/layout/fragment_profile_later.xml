@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/spacing_xlarge"
+    android:paddingBottom="@dimen/spacing_huge">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/background_parts" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/spacing_little"
+            android:src="@drawable/two_steps" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="#6e6e6e"
+        android:textSize="12.4sp"
+        tools:text="@string/text_tv_star" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/view_1"
+            style="@style/pill_profile_completeness"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_tiny"
+            android:background="@drawable/pill_profile_completeness_background" />
+
+        <View
+            android:id="@+id/view_2"
+            style="@style/pill_profile_completeness"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_tiny"
+            android:background="@color/decent_grey" />
+
+        <View
+            android:id="@+id/view_3"
+            style="@style/pill_profile_completeness"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_tiny"
+            android:background="@color/decent_grey" />
+
+        <View
+            android:id="@+id/view_4"
+            style="@style/pill_profile_completeness"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_tiny"
+            android:background="@color/decent_grey" />
+
+        <View
+            android:id="@+id/view_5"
+            style="@style/pill_profile_completeness"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_tiny"
+            android:background="@color/decent_grey" />
+
+
+    </LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/profile_completeness_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_xhuge">
+        </android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/bt_save"
+            style="@style/pill_profile"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/spacing_medium"
+            android:layout_marginStart="@dimen/spacing_medium"
+            android:background="@drawable/pill_background_sign_in"
+            android:text="@string/bt_text_profile" />
+</RelativeLayout>
+
+</LinearLayout>
