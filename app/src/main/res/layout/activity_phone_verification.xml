@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.skeleton.activity.PhoneVerificationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <include layout="@layout/app_bar_layout"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/spacing_xhuge"
+            android:src="@drawable/unlocked" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/spacing_large"
+            android:paddingRight="@dimen/spacing_large">
+
+            <TextView
+                android:id="@+id/tv_resend_otp"
+                style="@style/verification_tv_pill"
+                android:layout_width="match_parent"
+                android:drawableLeft="@drawable/resend_o_t_p"
+                android:text="@string/verification_tv_resend" />
+
+            <TextView
+                android:id="@+id/tv_edit_number"
+                style="@style/verification_tv_pill"
+                android:layout_width="match_parent"
+                android:drawableLeft="@drawable/resend_o_t_p"
+                android:text="@string/verification_tv_edit_num" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_xlarge"
+            android:layout_marginRight="@dimen/spacing_xlarge"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:gravity="center_horizontal"
+            android:text="@string/verification_tv_req"
+            android:textColor="@color/decent_black"
+            android:textSize="@dimen/font_large" />
+
+        <TextView
+            android:id="@+id/tv_verify_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:gravity="center_horizontal"
+            android:textColor="@color/decent_black"
+            android:textSize="@dimen/font_xxlarge"
+            tools:text="@string/dummy_phone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/spacing_huge"
+            android:paddingRight="@dimen/spacing_huge">
+
+            <EditText
+                android:id="@+id/tv_digit_one"
+                style="@style/otp_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxWidth="20dp" />
+
+            <EditText
+                android:id="@+id/tv_digit_two"
+                style="@style/otp_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/tv_digit_three"
+                style="@style/otp_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/tv_digit_four"
+                style="@style/otp_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/font_normal"
+        android:layout_marginLeft="@dimen/font_large"
+        android:layout_marginRight="@dimen/font_large"
+        android:background="@drawable/pill_background_sign_in"
+        android:text="@string/bt_verify"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_xlarge" />
+
+</RelativeLayout>

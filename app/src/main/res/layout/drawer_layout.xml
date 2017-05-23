@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_drawer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/spacing_huge"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/spacing_xhuge"
+            android:layout_height="@dimen/spacing_xhuge"
+            android:src="@drawable/my_profile_ph" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/font_normal"
+            android:text="Your Account"
+            android:textAllCaps="true"
+            android:textColor="@color/sign_in"
+            android:textSize="@dimen/font_small" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/tv_drawer_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_home"
+                android:text="@string/text_tv_home" />
+
+            <TextView
+                style="@style/tv_drawer_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/date_posts"
+                android:text="@string/text_tv_date_posts" />
+
+            <TextView
+                style="@style/tv_drawer_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/my_dates"
+                android:text="@string/text_tv_dates" />
+
+            <TextView
+                style="@style/tv_drawer_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/fav"
+                android:text="@string/text_tv_favourates" />
+
+            <TextView
+                style="@style/tv_drawer_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/mmemberships"
+                android:text="@string/text_tv_memnerships" />
+
+            <TextView
+                style="@style/tv_drawer_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/settings"
+                android:text="@string/text_tv_settings" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_huge"
+            android:letterSpacing="0.09"
+            android:text="@string/text_tv_logout"
+            android:textColor="@color/sign_in"
+            android:textSize="@dimen/font_small" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/spacing_large"
+        android:src="@drawable/side_menu_exut" />
+
+</RelativeLayout>
